@@ -1,0 +1,12 @@
+[
+  {
+    "name": "awesome-project",
+    "description": "A curated list of amazing tools.",
+    "url": "https://github.com/example/awesome-project"
+  },
+  {
+    "name": "web-starter",
+    "description": "Boilerplate code for modern web apps.",
+    "url": "https://github.com/example/web-starter"
+  }
+]
