@@ -1,0 +1,16 @@
+document.addEventListener('DOMContentLoaded', () => {
+  fetch('events.json')
+    .then(response => response.json())
+    .then(data => {
+      const listContainer = document.getElementById('repo-list');
+      data.forEach(repo => {
+        const item = document.createElement('li');
+        item.innerHTML = `
+          <a href="${repo.url}" target="_blank">${repo.name}</a>
+          <p>${repo.description}</p>
+        `;
+        listContainer.appendChild(item);
+      });
+    })
+    .catch(error => console.error('Error loading repositories:', error));
+});
